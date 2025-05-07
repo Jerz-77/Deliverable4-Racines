@@ -1,0 +1,301 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <!-- cdn link for the font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      body.menu {
+         background-image: url('images/meny.jpg');
+      background-size: cover;  /* Ensures the image covers the entire background */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      }
+  </style>
+</head>
+<body class="menu">
+    
+    <!-- header section  -->
+    <header class="header">
+
+       
+
+        <section class="flex">
+            <!-- <img src="images/logo.png" alt="logo" style="width: 50px; height: 50px;">  -->
+        <nav class="navbar">
+            <a href="home.html" class="logo">
+                Delish Bytes
+             </a>
+             <a href="home.html">HOME</a>
+             <a href="about.html">ABOUT US</a>
+             <a href="menu.html">MENU</a>
+             <a href="order.html">ORDERS</a>
+             <a href="contact.html">CONTACT</a>
+ 
+         </nav>
+         <div class="icons">
+
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+            
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <img src="images\moon.png" id ="icon">
+
+          
+         </div>
+
+         <div class="profile">
+
+            <p class="name">Jerz Racines</p>
+
+            <div class="flex">
+
+                <a href="profile.html" class="btn">profile</a>
+                <a href="#" class="delete-btn">logout</a>
+
+            </div>
+
+         </div>
+
+        </section>
+
+    </header>
+
+    <!-- Header End -->
+
+    <!-- menu start -->
+    <div class="heading">
+        <h3>Our Menu</h3>
+        <p><a href="home.html">home</a><span> / menu</span></p>
+    </div>
+
+    <section class="products">
+
+        <h1 class="title">latest dishes</h1>
+     
+        <div class="box-container">
+     
+           <form accept="" method="post" class="box">
+              <a href="quick_view.html" class="fas fa-eye"></a>
+              <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+              <img src="uploaded_img/bacon-burger.webp" alt="">
+              <a href="category.html" class="cat">Main Dish</a>
+              <div class="name">Bacon Burger</div>
+              <div class="flex">
+                 <div class="price"><span>₱</span>120<span>/-</span></div>
+                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+              </div>
+           </form>
+     
+           <form accept="" method="post" class="box">
+              <a href="quick_view.html" class="fas fa-eye"></a>
+              <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+              <img src="uploaded_img/pizza.webp" alt="">
+              <a href="category.html" class="cat">Main Dish</a>
+              <div class="name">Cheezy Pizza</div>
+              <div class="flex">
+                 <div class="price"><span>₱</span>250<span>/-</span></div>
+                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+              </div>
+           </form>
+     
+           <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/fchicken.webp" alt="">
+            <a href="category.html" class="cat">Main Dish</a>
+            <div class="name">Fried Chicken</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>160<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+         <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/nacho.jpg" alt="">
+            <a href="category.html" class="cat">Side Dish</a>
+            <div class="name">Nacho</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>60<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+         <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/ffries.jpg" alt="">
+            <a href="category.html" class="cat">Side Dish</a>
+            <div class="name">French Fries</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>35<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+         <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/caesar-salad.jpg" alt="">
+            <a href="category.html" class="cat">Side Dish</a>
+            <div class="name">Caesar Salad</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>50<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+           <form accept="" method="post" class="box">
+              <a href="quick_view.html" class="fas fa-eye"></a>
+              <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+              <img src="uploaded_img/choco-cake.webp" alt="">
+              <a href="category.html" class="cat">Dessert</a>
+              <div class="name">Chocolate Cake Slice</div>
+              <div class="flex">
+                 <div class="price"><span>₱</span>85<span>/-</span></div>
+                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+              </div>
+           </form>
+     
+           <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/choco-icream.jpg" alt="">
+            <a href="category.html" class="cat">Dessert</a>
+            <div class="name">Chocolate Ice Cream</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>100<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+     
+         <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/choco-chip.jpg" alt="">
+            <a href="category.html" class="cat">Dessert</a>
+            <div class="name">Chocolate Chip</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>25<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+         <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/or-juice.webp" alt="">
+            <a href="category.html" class="cat">Drinks</a>
+            <div class="name">Orange Juice</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>30<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+         <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/coke.jpg" alt="">
+            <a href="category.html" class="cat">Drinks</a>
+            <div class="name">Coke</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>40<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+         <form accept="" method="post" class="box">
+            <a href="quick_view.html" class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="uploaded_img/sprite.jpg" alt="">
+            <a href="category.html" class="cat">Drinks</a>
+            <div class="name">Sprite</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>40<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+
+     
+     </section>
+
+<!-- menu end -->
+    <!-- footer -->
+    <footer  class="footer">
+
+        <section class="grid">
+
+            <div class="box">
+                <img src="images/email.png" alt="Email Logo">
+                <h3> Our Email</h3>
+                <p>foodbytes@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <img src="images/time.png" alt="Open&Close Time">
+                <h3>We Open @</h3>
+                <p>10:00 - 21:00</p>
+            </div>
+            <div class="box">
+                <img src="images/location.png" alt="address">
+                <h3>Our Location is</h3>
+                <p>(Instert Company Location)</p>
+            </div>
+
+            <div class="box">
+                <img src="images/cellno.png" alt="Phone #">
+                <h3>Our Phone Number</h3>
+                <p>09093649182</p>
+            </div>
+        </section>
+    </footer>
+
+
+
+<!-- js script  -->
+<script src="js/script.js"></script>
+<script>
+   var icon = document.getElementById("icon");
+   
+   icon.onclick = function(){
+       document.body.classList.toggle("dark-theme");
+       if(document.body.classList.contains("dark-theme")){
+           icon.src = "images/sun.png";
+       } else {
+           icon.src = "images/moon.png";
+       }
+   }
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+   // Confetti on cart button click
+   document.querySelectorAll('.box .fa-shopping-cart').forEach(button => {
+      button.addEventListener('click', function(e) {
+         e.preventDefault();  // Prevent the form from submitting immediately
+
+         // Trigger confetti animation
+         confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+         });
+         // Optionally submit the form after a slight delay to let confetti show
+         setTimeout(() => {
+            button.closest('form').submit();
+         }, 500); // Adjust the delay if needed (in milliseconds)
+      });
+   });
+</script>
+
+</body>
+</html>

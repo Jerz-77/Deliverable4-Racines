@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- cdn link for the font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    
+    <!-- header section  -->
+    <header class="header">
+
+       
+
+        <section class="flex">
+            <!-- <img src="images/logo.png" alt="logo" style="width: 50px; height: 50px;">  -->
+        <nav class="navbar">
+            <a href="home.html" class="logo">
+                Delish Bytes
+             </a>
+            <a href="home.html">home</a>
+            <a href="about.html">about us</a>
+            <a href="menu.html">menu</a>
+            <a href="order.html">orders</a>
+            <a href="contact.html">contact</a>
+
+         </nav>
+          <div class="icons">
+
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="cart.htm"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+            
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+          
+         </div>
+
+         <div class="profile">
+
+            <p class="name">Jerz Racines</p>
+
+            <div class="flex">
+
+                <a href="profile.html" class="btn">profile</a>
+                <a href="#" class="delete-btn">logout</a>
+
+            </div>
+
+         </div>
+
+        </section>
+
+    </header>
+
+    <!-- Header End -->
+
+   
+
+    <!-- footer -->
+    <footer  class="footer">
+
+        <section class="grid">
+
+            <div class="box">
+                <img src="images/email.png" alt="Email Logo">
+                <h3> Our Email</h3>
+                <a href="foodbytes@gmail.com">foodbytes@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <img src="images/time.png" alt="Open&Close Time">
+                <h3>We Open @</h3>
+                <p>10:00 - 21:00</p>
+            </div>
+            <div class="box">
+                <img src="images/location.png" alt="address">
+                <h3>Our Location is</h3>
+                <a href="@">(Instert Company Location)</a>
+            </div>
+
+            <div class="box">
+                <img src="images/cellno.png" alt="Phone #">
+                <h3>Our Phone Number</h3>
+                <a href="#">09093649182</a>
+            </div>
+        </section>
+        <div class="credit">created by Jerz & Ariel</div>
+    </footer>
+
+
+
+<!-- js script  -->
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- cdn link for the font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    
+    <!-- header section  -->
+    <header class="header">
+    
+       
+
+        <section class="flex">
+            <!-- <img src="images/logo.png" alt="logo" style="width: 50px; height: 50px;">  -->
+        <nav class="navbar">
+            <a href="home.html" class="logo">
+                Delish Bytes
+             </a>
+             <a href="home.html">HOME</a>
+             <a href="about.html">ABOUT US</a>
+             <a href="menu.html">MENU</a>
+             <a href="order.html">ORDERS</a>
+             <a href="contact.html">CONTACT</a>
+ 
+         </nav>
+         <div class="icons">
+
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+            
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <img src="images\moon.png" id ="icon">
+
+          
+         </div>
+
+         <div class="profile">
+
+            <p class="name"></p>
+
+            <div class="flex">
+
+                <a href="profile.html" class="btn">profile</a>
+                <a href="#" class="delete-btn">logout</a>
+
+            </div>
+
+         </div>
+
+        </section>
+
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Register Start -->
+    <section class="form-container">
+
+        <form action="" method="post">
+           <h3>register now</h3>
+           <input type="text" required maxlength="20" name="name" placeholder="Enter Your Name" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+           <input type="email" required maxlength="50" name="email" placeholder="Enter Your Email" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+           <input type="numner" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" placeholder="Enter Your Phone Number" required class="box" name="number">
+           <input type="password" required maxlength="20" name="pass" placeholder="Enter Your Password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+           <input type="password" required maxlength="20" name="cpass" placeholder="Confirm Passowrd" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+           <input type="submit" value="regisetr now" class="btn" name="submit">
+           <p>already have an account? <a href="login.html">login now</a></p>
+        </form>
+     
+     </section>
+    <!-- Register End -->
+
+    <!-- footer -->
+    <footer  class="footer">
+
+        <section class="grid">
+
+            <div class="box">
+                <img src="images/email.png" alt="Email Logo">
+                <h3> Our Email</h3>
+                <p>foodbytes@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <img src="images/time.png" alt="Open&Close Time">
+                <h3>We Open @</h3>
+                <p>10:00 - 21:00</p>
+            </div>
+            <div class="box">
+                <img src="images/location.png" alt="address">
+                <h3>Our Location is</h3>
+                <p>(Instert Company Location)</p>
+            </div>
+
+            <div class="box">
+                <img src="images/cellno.png" alt="Phone #">
+                <h3>Our Phone Number</h3>
+                <p>09093649182</p>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- js script  -->
+<script src="js/script.js"></script>
+<script>
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+        } else {
+            icon.src = "images/moon.png";
+        }
+    }
+    </script>
+
+
+</body>
+</html>
