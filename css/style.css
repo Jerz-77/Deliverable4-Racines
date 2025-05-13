@@ -8,10 +8,11 @@
     --black: #000000;
     --light-color: #777;
     --logo-color: #febd59;
+    --bg: #d5d5d5;
     --border: .2rem solid var(--black);
 }
 body {
-   background-color: var(--bgcolor) ;
+   background-color: var(--bg) ;
 }
 *{
   font-family: 'Rubik', sans-serif;

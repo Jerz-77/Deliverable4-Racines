@@ -283,7 +283,7 @@ var swiper = new Swiper(".hero-slider", {
    effect: "flip",
    pagination: {
       el: ".swiper-pagination",
-      clickable:true,
+      clickable: true,
    },
 });
 
@@ -299,7 +299,26 @@ icon.onclick = function(){
 }
 </script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+   <script>
+      // Confetti on cart button click
+      document.querySelectorAll('.box .fa-shopping-cart').forEach(button => {
+         button.addEventListener('click', function(e) {
+            e.preventDefault();  // Prevent the form from submitting immediately
+   
+            // Trigger confetti animation
+            confetti({
+               particleCount: 100,
+               spread: 70,
+               origin: { y: 0.6 }
+            });
+            // Optionally submit the form after a slight delay to let confetti show
+            setTimeout(() => {
+               button.closest('form').submit();
+            }, 500); // Adjust the delay if needed (in milliseconds)
+         });
+      });
+   </script>
 
 </body>
 </html>
